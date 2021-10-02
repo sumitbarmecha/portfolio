@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #141414;
+    height: 100%;
+    width: 100%;
+    font-family: 'jws';
+    font-feature-settings: 'liga' off;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.navbar {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    left: 0%;
+    /* position: s; */
+    height: 40px;
+    align-self: center;
+    /* border-bottom: antiquewhite solid 1px; */
+}
+
+.line {
+    width: 90%;
+    height: 0.01px;
+    align-self: center;
+    border: #bac4b8 0.01px solid;
+    animation: lineup 2s 0s 1 ease-in-out;
+}
+
+@keyframes lineup {
+    0% {
+        border-color: #fbf66500;
+        width: 0px;
+        /* border-bottom: antiquewhite solid 0px; */
+    }
+    100% {
+        border-color: antiquewhite;
+        width: 90%;
+        /* border-bottom: antiquewhite solid 1px; */
+    }
+}
+
+.leftnav {
+    color: #bac4b8;
+}
+
+.about {
+    font: inherit;
+    position: relative;
+    font-size: x-small;
+    /* transition: color 500ms cubic-bezier(.25, .46, .45, .94); */
+    pointer-events: all;
+    cursor: pointer;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    animation: scrollup 5s 0s 1 cubic-bezier(.25, .46, .45, .94);
+}
+
+@keyframes scrollup {
+    from {
+        color: rgba(0, 0, 0, 0);
+    }
+    to {
+        color: #bac4b8;
+    }
+}
+
+.rightnav {
+    color: #bac4b8;
+}
+
+.name {
+    margin-left: 60px;
+    color: #bac4b8;
+    font-size: 3em;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    font-family: 'teko', sans-serif;
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+    src: url("https://assets.codepen.io/907368/cyberpunk.ttf") format("truetype");
+    text-align: left;
+}
+
+.mainflex {
+    align-self: center;
+    color: antiquewhite;
+    display: flex;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    background-color: #141414;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    animation: flexanimation 3s 0s 1 ease-in-out;
+}
+
+.name span {
+    animation: flexnameanime 3s 0s 1 ease-in-out;
+}
+
+@keyframes flexnameanime {
+    0% {
+        opacity: 0;
+        padding-left: 5px;
+        /* opacity: 0; */
+    }
+    100% {
+        opacity: 2;
+        padding-left: 0px;
+        /* opacity: 1; */
+    }
+}
+
+@keyframes flexanimation {
+    0% {
+        left: 1810px;
+        /* opacity: 0; */
+    }
+    100% {
+        left: 0px;
+        /* opacity: 1; */
+    }
+}
+
+@keyframes flexanimation1 {
+    0% {
+        padding-left: 20%;
+        /* opacity: 0; */
+    }
+    100% {
+        padding-left: 0px;
+        /* opacity: 1; */
+    }
+}
+
+.afterclickimg {
+    width: 500px;
+    /* z-index: 20; */
+    padding-left: 40%;
+    justify-content: center;
+}
+
+.mainflex img {
+    opacity: 0.5;
+    width: 100px;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    margin: 5px;
+    height: 250px;
+    animation: flexanimation1 3s 0s 1 ease-out;
+    transition: width 0.3s, height 0.3s;
+}
+
+.mainflex img:hover {
+    width: 150px;
+    opacity: 1;
+    height: 300px;
+}
+
+.img1 {
+    display: "none";
+    /* visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1; */
+}
+
+.img1 img {
+    width: 500px;
+    display: none;
+}
