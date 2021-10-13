@@ -451,14 +451,14 @@ body::-webkit-scrollbar {
         opacity: 1;
     }
 }
-
+/* 
 .a:hover .b {
     display: block;
     color: #d2dcf2;
     margin: 0;
     padding: 0;
     animation: godown 1s 0s 1 ease-in-out;
-}
+} */
 
 .a {
     text-align: center;
