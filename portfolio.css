@@ -451,8 +451,9 @@ body::-webkit-scrollbar {
         opacity: 1;
     }
 }
-/* 
-.a:hover .b {
+
+
+/* .a:hover .b {
     display: block;
     color: #d2dcf2;
     margin: 0;
